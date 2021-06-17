@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/><meta charset="UTF-8">
+    <title>Oligrapher</title>
+    <script src="oligrapher.js"></script>
+    <style>
+     body {
+       margin: 10px;
+     }
+
+     #oligrapher {
+       height: 600px;
+       width: 100%;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div id="oligrapher"></div>
+
+    <script>
+
+     const oli = new Oligrapher({
+       "graph": {
+         "nodes": {
+           "r1eyAr8eg": {
+             "id": "r1eyAr8eg",
+             "name": "n1",
+             "x": -82.81510934393638,
+             "y": -65.64612326043738,
+             "scale": 1,
+             "color": "#ccc",
+             "edgeIds": [
+               "ryrgRB8xe"
+             ]
+           },
+           "HkMyAB8le": {
+             "id": "HkMyAB8le",
+             "name": "n2",
+             "x": 129.6487253599979,
+             "y": -50.647084863161695,
+             "scale": 1,
+             "color": "#ccc",
+             "edgeIds": [
+               "ryrgRB8xe"
+             ]
+           }
+         },
+         "edges": {
+           "ryrgRB8xe": {
+             "id": "ryrgRB8xe",
+             "label": "edge!",
+             "scale": 1,
+             "arrow": "2->1",
+             "dash": true,
+             "node1_id": "r1eyAr8eg",
+             "node2_id": "HkMyAB8le",
+             "cx": 8.665142320026831,
+             "cy": -29.500478016243452,
+             "x1": -82.81510934393638,
+             "y1": -65.64612326043738,
+             "x2": 129.6487253599979,
+             "y2": -50.647084863161695,
+             "s1": 1,
+             "s2": 1
+           }
+         },
+         "captions": {
+         }
+       },
+       "annotations": {
+         "currentIndex": 0,
+         "list": [],
+         "sources": null
+       },
+       "settings": {
+         "debug": false,
+         "embed": false
+       },
+       "attributes": {
+         "title": "Example Map",
+         "subtitle": null,
+         "date": "February 14, 2017",
+         "user": null,
+         "settings": {
+           "private": false,
+           "clone": false,
+           "list_sources": false,
+           "defaultStoryMode": true,
+           "defaultExploreMode": false,
+           "storyModeOnly": false,
+           "exploreModeOnly": false,
+           "scrollToZoom": false
+         }
+       }
+     })
+    </script>
+  </body>
+</html>
